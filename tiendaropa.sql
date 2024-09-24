@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-09-2024 a las 11:50:14
+-- Tiempo de generación: 24-09-2024 a las 12:03:25
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -31,6 +31,7 @@ CREATE TABLE `articulos` (
   `ID_articulo` int(11) NOT NULL,
   `nombre` varchar(80) NOT NULL,
   `valor` int(11) NOT NULL,
+  `descripcion` varchar(100) NOT NULL,
   `ID_categoria` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -38,11 +39,11 @@ CREATE TABLE `articulos` (
 -- Volcado de datos para la tabla `articulos`
 --
 
-INSERT INTO `articulos` (`ID_articulo`, `nombre`, `valor`, `ID_categoria`) VALUES
-(2, 'Remera gris', 15000, 1),
-(3, 'Buzo negro largo', 30000, 4),
-(4, 'Pantalon rojo', 20000, 2),
-(5, 'Campera con capucha', 40000, 3);
+INSERT INTO `articulos` (`ID_articulo`, `nombre`, `valor`, `descripcion`, `ID_categoria`) VALUES
+(2, 'Remera gris', 15000, 'Remera color gris manga larga  ', 1),
+(3, 'Buzo negro largo', 30000, 'Buzo color negro oversize hombre-mujer', 4),
+(4, 'Pantalon rojo', 20000, 'Pantalon largo color rojo con detalles azules', 2),
+(5, 'Campera con capucha', 40000, 'Campera tipo rompevientos con capucha para invierno', 3);
 
 -- --------------------------------------------------------
 
